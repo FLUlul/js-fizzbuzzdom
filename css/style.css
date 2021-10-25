@@ -1,0 +1,54 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color:#083b4c ;
+}
+
+#container {
+    width: 60%;
+    margin: 0 auto;
+    text-align: center;
+    color: white;
+}
+
+#containerSqr {
+    display: flex;
+    flex-wrap: wrap;
+    /* debug */
+    /* border: solid white; */
+}
+
+
+.sqr{
+    height: 150px;
+    width: calc(100% / 7);
+    padding: 10px 10px;
+    /* debug */
+    /* border: solid black; */
+}
+
+.contentSqr {
+    height: 100%;
+    width: 100%;
+    background-color: #1389b2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+}
+
+.fizz {
+    background-color: #0bd6a1;
+}
+
+.buzz {
+    background-color: #ffd166;
+}
+
+.fizzbuzz {
+    background-color: #f0466f;
+}
