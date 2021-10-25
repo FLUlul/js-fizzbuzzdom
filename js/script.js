@@ -25,9 +25,28 @@ for (i=1; i<=100; i++) {
 
     //appendo l elemento contentSqr dentro l elemento sqr
     eleSqr.append(cntSqr);
-    cntSqr.append(i);
-    
-    //creo gli if else
 
-    
+    //creo gli if else
+    if (i % 3 === 0 && i % 5 === 0) {
+
+        cntSqr.classList.add("fizzbuzz")
+        cntSqr.append("Fizzbuzz");
+
+    } else if (i % 3 === 0) {
+
+        cntSqr.classList.add("fizz")
+        cntSqr.append("Fizz");
+
+    } else if (i % 5 === 0) {
+
+        cntSqr.classList.add("buzz")
+        cntSqr.append("Buzz");
+
+    } else {
+
+        cntSqr.append(i);
+
+    }
+
+
 }
